@@ -1,0 +1,31 @@
+//to print factorial of num
+class Recursion2 
+{
+	public static void print(int n){
+	//System.out.println(n);
+	int fact;
+	if(n==1){
+		return;
+	} else{
+		 fact=fact*(n-1);
+		
+		n--;
+		
+			print(n);
+
+	}
+	
+	System.out.println(fact);
+	
+	
+
+
+
+	}
+	public static void main(String[] args) 
+	{
+		System.out.println("main begin");
+		print(5);
+		System.out.println("main end");
+	}
+}
